@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seminar Feedback Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Seminar Feedback Form</h1>
+    <form id="feedbackForm">
+        <label for="seminarTitle">Seminar Title:</label>
+        <input type="text" id="seminarTitle" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="speakers">Speaker(s):</label>
+        <input type="text" id="speakers" required>
+
+        <h2>Overall Rating:</h2>
+        <div class="rating">
+            <input type="radio" name="rating" value="Excellent" id="excellent">
+            <label for="excellent">Excellent</label>
+            <input type="radio" name="rating" value="Good" id="good">
+            <label for="good">Good</label>
+            <input type="radio" name="rating" value="Fair" id="fair">
+            <label for="fair">Fair</label>
+            <input type="radio" name="rating" value="Poor" id="poor">
+            <label for="poor">Poor</label>
+        </div>
+
+        <!-- Add more questions for seminar content, speaker effectiveness, etc. -->
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" rows="4" cols="50"></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+</body>
+</html>
